@@ -48,9 +48,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			aria-label="<?php esc_attr_e( 'ADRIABIT — Naslovnica', 'adriabit' ); ?>"
 		>
 
-			<span class="site-logo__mark" aria-hidden="true">
-				A
-			</span>
+			<img
+				class="site-logo__image"
+				src="<?php echo esc_url( ADRIABIT_URI . '/assets/brand/adriabit-symbol.png' ); ?>"
+				alt=""
+				width="46"
+				height="46"
+			>
 
 			<span class="site-logo__word">
 				ADRIABIT
@@ -64,20 +68,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 			data-navigation
 		>
 
-			<a href="<?php echo esc_url( home_url( '/#usluge' ) ); ?>">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				Početna
+			</a>
+
+			<a href="<?php echo esc_url( home_url( '/usluge/' ) ); ?>">
 				Usluge
 			</a>
 
 			<a href="<?php echo esc_url( home_url( '/#projekti' ) ); ?>">
 				Projekti
-			</a>
-
-			<a href="<?php echo esc_url( home_url( '/demo/' ) ); ?>">
-				Demo
-			</a>
-
-			<a href="<?php echo esc_url( home_url( '/case-studies/' ) ); ?>">
-				Case Studies
 			</a>
 
 			<a href="<?php echo esc_url( home_url( '/#o-nama' ) ); ?>">
@@ -91,13 +91,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</nav>
 
 		<div class="site-header__actions">
-
-			<a
-				class="site-header__portal"
-				href="<?php echo esc_url( home_url( '/portal/' ) ); ?>"
-			>
-				Portal za klijente
-			</a>
 
 			<a
 				class="button button--header"
@@ -130,20 +123,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<nav aria-label="<?php esc_attr_e( 'Mobilna navigacija', 'adriabit' ); ?>">
 
-			<a href="<?php echo esc_url( home_url( '/#usluge' ) ); ?>">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				Početna
+			</a>
+
+			<a href="<?php echo esc_url( home_url( '/usluge/' ) ); ?>">
 				Usluge
 			</a>
 
 			<a href="<?php echo esc_url( home_url( '/#projekti' ) ); ?>">
 				Projekti
-			</a>
-
-			<a href="<?php echo esc_url( home_url( '/demo/' ) ); ?>">
-				Demo
-			</a>
-
-			<a href="<?php echo esc_url( home_url( '/case-studies/' ) ); ?>">
-				Case Studies
 			</a>
 
 			<a href="<?php echo esc_url( home_url( '/#o-nama' ) ); ?>">
@@ -152,10 +141,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>">
 				Kontakt
-			</a>
-
-			<a href="<?php echo esc_url( home_url( '/portal/' ) ); ?>">
-				Portal za klijente
 			</a>
 
 			<a

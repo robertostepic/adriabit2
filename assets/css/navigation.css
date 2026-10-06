@@ -71,16 +71,20 @@ body.admin-bar .site-header {
 	flex-shrink: 0;
 }
 
-.site-logo__mark {
-	display: grid;
-	width: 32px;
-	height: 32px;
-	place-items: center;
-	border: 1px solid rgba(255, 255, 255, 0.35);
-	border-radius: 50%;
+.site-logo__image {
+	display: block;
+	width: 46px;
+	height: 46px;
+	object-fit: contain;
+	flex-shrink: 0;
+}
+
+.site-logo__word {
 	font-family: var(--font-heading);
-	font-size: 0.85rem;
+	font-size: 0.92rem;
 	font-weight: 700;
+	letter-spacing: 0.12em;
+	color: var(--color-white);
 }
 
 .site-logo__word {

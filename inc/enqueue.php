@@ -143,6 +143,15 @@ wp_enqueue_script(
 		);
 	}
 
+	if ( is_page( 'usluge' ) ) {
+	wp_enqueue_style(
+		'adriabit-usluge',
+		ADRIABIT_URI . '/assets/css/usluge.css',
+		array( 'adriabit-animations' ),
+		$version
+	);
+}
+
 	if ( is_page( 'pokrenimo-projekt' ) ) {
 
 	wp_enqueue_style(
