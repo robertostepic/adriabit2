@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<img
 				class="site-logo__image"
-				src="<?php echo esc_url( ADRIABIT_URI . '/assets/brand/adriabit-symbol.png' ); ?>"
+				src="<?php echo esc_url( ADRIABIT_URI . '/assets/brand/adriabit-symbol-light.png' ); ?>"
 				alt=""
 				width="46"
 				height="46"
@@ -123,20 +123,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<nav aria-label="<?php esc_attr_e( 'Mobilna navigacija', 'adriabit' ); ?>">
 
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<a href="<?php echo esc_url( home_url( '/#pocetna' ) ); ?>">
 				Početna
 			</a>
 
-			<a href="<?php echo esc_url( home_url( '/usluge/' ) ); ?>">
-				Usluge
+			<a href="<?php echo esc_url( home_url( '/#sto-radimo' ) ); ?>">
+				Što radimo
 			</a>
 
-			<a href="<?php echo esc_url( home_url( '/#projekti' ) ); ?>">
+			<a href="<?php echo esc_url( home_url( '/#proces' ) ); ?>">
+				Kako radimo
+			</a>
+
+			<a href="<?php echo esc_url( home_url( '/demo/' ) ); ?>">
 				Projekti
-			</a>
-
-			<a href="<?php echo esc_url( home_url( '/#o-nama' ) ); ?>">
-				O nama
 			</a>
 
 			<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>">
