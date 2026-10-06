@@ -474,6 +474,66 @@ get_header();
 
 			</article>
 
+
+			<!-- PROJEKT 04 -->
+			<article class="ab-demo-project">
+
+				<div class="ab-demo-browser">
+					<div class="ab-demo-browser__bar" aria-hidden="true">
+						<i></i><i></i><i></i>
+					</div>
+
+					<a
+						href="https://mobilerepairshop.robipc.org/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="<?php echo esc_url( get_theme_file_uri( '/assets/images/mobile-repair.webp' ) ); ?>"
+							alt="FIXORA Mobile Repair Studio demo stranica"
+							loading="lazy"
+						>
+					</a>
+				</div>
+
+				<div class="ab-demo-project__copy">
+					<p class="ab-demo-project__label">Demo projekt · 04</p>
+
+					<h2>FIXORA Mobile Repair Studio</h2>
+
+					<p class="ab-demo-project__type">
+						Servis mobilnih uređaja · WordPress
+					</p>
+
+					<p class="ab-demo-project__text">
+						Moderna WordPress stranica za servis mobitela i pametnih uređaja,
+						dizajnirana da korisniku odmah pokaže što servis nudi, koliko
+						popravak traje i kako može pokrenuti svoj zahtjev.
+					</p>
+
+					<p class="ab-demo-project__text">
+						Naglasak je na brzoj navigaciji, jasnim uslugama i cijenama,
+						praćenju statusa popravka te snažnim pozivima na akciju koji
+						korisnika vode od problema do rezervacije servisa bez nepotrebnih koraka.
+					</p>
+
+					<p class="ab-demo-project__lead">
+						FIXORA — brzo, jasno i profesionalno iskustvo od prvog klika
+						do preuzimanja uređaja.
+					</p>
+
+					<a
+						class="ab-demo-project__link"
+						href="https://mobilerepairshop.robipc.org/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Pogledaj demo ↗
+					</a>
+				</div>
+
+			</article>
+
 		</div>
 	</section>
 
