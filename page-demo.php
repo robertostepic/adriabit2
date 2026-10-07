@@ -534,6 +534,73 @@ get_header();
 
 			</article>
 
+
+			<!-- PROJEKT 05 -->
+			<article class="ab-demo-project ab-demo-project--reverse">
+
+				<div class="ab-demo-project__copy">
+					<p class="ab-demo-project__label">Demo projekt · 05</p>
+
+					<h2>BLACKLINE Barber Studio</h2>
+
+					<p class="ab-demo-project__type">
+						Barber studio · WordPress · Video &amp; Motion
+					</p>
+
+					<p class="ab-demo-project__text">
+						Premium WordPress stranica za moderan barber studio,
+						osmišljena kao vizualno iskustvo, a ne samo klasična
+						prezentacijska stranica.
+					</p>
+
+					<p class="ab-demo-project__text">
+						Projekt koristi velike tipografske kompozicije, cinematic
+						video sadržaj, animacije pri scrollu i pažljivo tempirane
+						prijelaze kako bi cijela stranica imala osjećaj modernog
+						lifestyle brenda.
+					</p>
+
+					<p class="ab-demo-project__text">
+						Poseban naglasak stavljen je na spoj videa i animacije
+						bez gubitka preglednosti i funkcionalnosti stranice,
+						dok je rezervacija termina uvijek jasno dostupna.
+					</p>
+
+					<p class="ab-demo-project__lead">
+						BLACKLINE — primjer kako web stranica može istovremeno
+						prodavati uslugu i graditi snažan identitet brenda.
+					</p>
+
+					<a
+						class="ab-demo-project__link"
+						href="https://barber.robipc.org/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Pogledaj demo ↗
+					</a>
+				</div>
+
+				<div class="ab-demo-browser">
+					<div class="ab-demo-browser__bar" aria-hidden="true">
+						<i></i><i></i><i></i>
+					</div>
+
+					<a
+						href="https://barber.robipc.org/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="<?php echo esc_url( get_theme_file_uri( '/assets/images/barber.webp' ) ); ?>"
+							alt="BLACKLINE Barber Studio demo stranica"
+							loading="lazy"
+						>
+					</a>
+				</div>
+
+			</article>
+
 		</div>
 	</section>
 
