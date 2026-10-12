@@ -176,12 +176,14 @@ get_header();
 			text-decoration: none;
 		}
 
-		/* Python Garage */
-		.ab-demo-project--garage {
+		/* Full-width application showcases: Python Garage + Mobile Repair Manager */
+		.ab-demo-project--garage,
+		.ab-demo-project--plugin {
 			display: block;
 		}
 
-		.ab-demo-project--garage .ab-demo-project__top {
+		.ab-demo-project--garage .ab-demo-project__top,
+		.ab-demo-project--plugin .ab-demo-project__top {
 			display: grid;
 			grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr);
 			gap: 70px;
@@ -189,7 +191,8 @@ get_header();
 			margin-bottom: 42px;
 		}
 
-		.ab-demo-project--garage .ab-demo-project__copy {
+		.ab-demo-project--garage .ab-demo-project__copy,
+		.ab-demo-project--plugin .ab-demo-project__copy {
 			max-width: 620px;
 		}
 
@@ -233,7 +236,8 @@ get_header();
 				order: initial;
 			}
 
-			.ab-demo-project--garage .ab-demo-project__top {
+			.ab-demo-project--garage .ab-demo-project__top,
+			.ab-demo-project--plugin .ab-demo-project__top {
 				grid-template-columns: 1fr;
 				gap: 28px;
 			}
@@ -313,9 +317,7 @@ get_header();
 					</p>
 
 					<p class="ab-demo-project__text">
-						Poslovna WordPress stranica za odvjetnički ured,
-						s fokusom na jasan sadržaj, ozbiljan vizualni identitet
-						i jednostavan put do kontakta.
+						WordPress stranica za odvjetnički ured, napravljena tako da posjetitelj brzo pronađe važne informacije, upozna ured i jednostavno dođe do kontakta.
 					</p>
 
 					<a
@@ -344,9 +346,7 @@ get_header();
 					</p>
 
 					<p class="ab-demo-project__text">
-						Moderna prezentacijska stranica za digitalnu agenciju,
-						s naglaskom na usluge, jasan proces rada i snažan
-						vizualni identitet.
+						Web stranica za digitalnu agenciju koja jasno pokazuje što nude, kako rade i kako ih klijent može kontaktirati.
 					</p>
 
 					<a
@@ -597,6 +597,107 @@ get_header();
 							loading="lazy"
 						>
 					</a>
+				</div>
+
+			</article>
+
+
+			<!-- PROJEKT 06 -->
+			<article class="ab-demo-project ab-demo-project--plugin">
+
+				<div class="ab-demo-project__top">
+
+					<div class="ab-demo-project__copy">
+						<p class="ab-demo-project__label">Demo projekt · 06</p>
+
+						<h2>Mobile Repair Manager</h2>
+
+						<p class="ab-demo-project__type">
+							WordPress plugin · Upravljanje servisom uređaja
+						</p>
+					</div>
+
+					<div>
+						<p class="ab-demo-project__lead">
+							Od zaprimanja uređaja do naplate —
+							cijeli servis na jednom mjestu.
+						</p>
+
+						<p class="ab-demo-project__text">
+							Mobile Repair Manager je WordPress plugin za servise mobitela
+							i drugih elektroničkih uređaja. Iz jedne administracije mogu se
+							voditi klijenti, uređaji, servisni nalozi, tehničari, rezervni
+							dijelovi, zalihe i naplate.
+						</p>
+
+						<p class="ab-demo-project__text">
+							Svaki popravak prati se od zaprimanja uređaja do završetka servisa
+							i preuzimanja. Tehničar vidi što treba napraviti, u kojoj je fazi
+							popravak i koji su dijelovi korišteni, dok servis u svakom trenutku
+							ima pregled aktivnih naloga i stanja radionice.
+						</p>
+
+						<p class="ab-demo-project__text">
+							Klijent putem privatnog online pristupa može provjeriti status
+							svog uređaja, pregledati informacije o popravku i odobriti
+							predložene radove bez dodatnih poziva servisu.
+						</p>
+
+						<p class="ab-demo-project__text">
+							Plugin uključuje i naplate, izvještaje, praćenje zaliha,
+							evidenciju obavijesti te provjeru ispravnosti sustava.
+						</p>
+
+						<p class="ab-demo-project__lead">
+							Manje vremena na administraciju, a više kontrole nad onime
+							što se stvarno događa u servisu.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="ab-demo-gallery">
+
+					<div class="ab-demo-gallery__item ab-demo-gallery__item--wide">
+						<img
+							src="<?php echo esc_url( get_theme_file_uri( '/assets/images/mr1.webp' ) ); ?>"
+							alt="Mobile Repair Manager dashboard i pregled aktivnih popravaka"
+							loading="lazy"
+						>
+					</div>
+
+					<div class="ab-demo-gallery__item">
+						<img
+							src="<?php echo esc_url( get_theme_file_uri( '/assets/images/mr2.webp' ) ); ?>"
+							alt="Mobile Repair Manager servisni nalozi"
+							loading="lazy"
+						>
+					</div>
+
+					<div class="ab-demo-gallery__item">
+						<img
+							src="<?php echo esc_url( get_theme_file_uri( '/assets/images/mr3.webp' ) ); ?>"
+							alt="Mobile Repair Manager naplate i evidencija obavijesti"
+							loading="lazy"
+						>
+					</div>
+
+					<div class="ab-demo-gallery__item">
+						<img
+							src="<?php echo esc_url( get_theme_file_uri( '/assets/images/mr4.webp' ) ); ?>"
+							alt="Mobile Repair Manager izvještaji"
+							loading="lazy"
+						>
+					</div>
+
+					<div class="ab-demo-gallery__item">
+						<img
+							src="<?php echo esc_url( get_theme_file_uri( '/assets/images/mr5.webp' ) ); ?>"
+							alt="Mobile Repair Manager provjera sustava"
+							loading="lazy"
+						>
+					</div>
+
 				</div>
 
 			</article>
