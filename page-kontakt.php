@@ -24,7 +24,7 @@ if ( 'POST' === $_SERVER['REQUEST_METHOD'] && isset( $_POST['adriabit_contact_su
 	if ( ! wp_verify_nonce( $nonce, 'adriabit_contact_form' ) || '' !== $honeypot ) {
 		$contact_status = 'error';
 	} else {
-		$name    = isset( $_POST['name'] ) ? sanitize_text_field( wp_unslash( $_POST['name'] ) ) : '';
+		$name    = isset( $_POST['contact_name'] ) ? sanitize_text_field( wp_unslash( $_POST['contact_name'] ) ) : '';
 		$email   = isset( $_POST['email'] ) ? sanitize_email( wp_unslash( $_POST['email'] ) ) : '';
 		$company = isset( $_POST['company'] ) ? sanitize_text_field( wp_unslash( $_POST['company'] ) ) : '';
 		$phone   = isset( $_POST['phone'] ) ? sanitize_text_field( wp_unslash( $_POST['phone'] ) ) : '';
@@ -72,7 +72,7 @@ if ( isset( $_GET['contact_sent'] ) && '1' === sanitize_text_field( wp_unslash( 
 get_header();
 ?>
 
-<main id="primary" class="contact-page">
+<main id="main-content" class="contact-page">
 
 	<section class="contact-hero">
 		<div class="contact-shell contact-hero__grid">
@@ -143,7 +143,7 @@ get_header();
 					<div class="contact-form__grid">
 						<label class="contact-field">
 							<span>Ime i prezime *</span>
-							<input type="text" name="name" autocomplete="name" required>
+							<input type="text" name="contact_name" autocomplete="name" required>
 						</label>
 
 						<label class="contact-field">

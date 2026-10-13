@@ -6,7 +6,7 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 get_header();
 ?>
-<main class="legal-page">
+<main id="main-content" class="legal-page">
 	<section class="legal-hero">
 		<div class="legal-shell">
 			<p class="legal-eyebrow">PRIVATNOST</p>

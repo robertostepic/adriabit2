@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main id="primary" class="portal-login-page">
+<main id="main-content" class="portal-login-page">
 	<section class="portal-login">
 		<div class="portal-login__glow" aria-hidden="true"></div>
 

@@ -1,5 +1,5 @@
 <?php defined('ABSPATH')||exit; get_header(); ?>
-<main class="ab-page">
+<main id="main-content" class="ab-page">
 <section class="ab-hero"><div class="ab-wrap"><p class="ab-eye">CASE STUDIES</p><h1>Od problema do<br><em>upotrebljivog rješenja.</em></h1><p>Problem, način razmišljanja, struktura rješenja i rezultat — bez lažnih klijenata i izmišljenih brojki.</p></div></section>
 <section class="ab-section"><div class="ab-wrap">
 <article class="ab-case"><header><small>DEMO CASE STUDY · 01</small><h2>RepairFlow</h2><span>WordPress · PHP · MySQL</span></header><div class="ab-casegrid"><div><b>PROBLEM</b><h3>Cijeli servisni proces je razbacan.</h3><p>Kupac, uređaj, dijagnoza, dijelovi, odobrenje i status trebaju jedno središnje mjesto.</p></div><div><b>RJEŠENJE</b><h3>Radni nalog kao središte.</h3><p>Jedan workflow povezuje podatke, fotografije, troškove, status i korisničko odobrenje.</p></div><div><b>REZULTAT KONCEPTA</b><h3>Jasniji tijek rada.</h3><p>Administrator vidi stanje popravka, a kupac ključne informacije dobiva putem sigurnog linka.</p></div></div></article>

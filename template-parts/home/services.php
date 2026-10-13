@@ -11,28 +11,34 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $services = array(
 	array(
-		'title' => 'Landing stranice',
-		'icon'  => 'browser',
+		'title'  => 'Landing stranice',
+		'icon'   => 'browser',
+		'anchor' => 'landing-stranice',
 	),
 	array(
-		'title' => 'WordPress rješenja',
-		'icon'  => 'wordpress',
+		'title'  => 'WordPress rješenja',
+		'icon'   => 'wordpress',
+		'anchor' => 'wordpress-stranice',
 	),
 	array(
-		'title' => 'eCommerce trgovine',
-		'icon'  => 'cart',
+		'title'  => 'eCommerce trgovine',
+		'icon'   => 'cart',
+		'anchor' => 'ecommerce-rjesenja',
 	),
 	array(
-		'title' => 'Web aplikacije',
-		'icon'  => 'grid',
+		'title'  => 'Web aplikacije',
+		'icon'   => 'grid',
+		'anchor' => 'web-aplikacije',
 	),
 	array(
-		'title' => 'Desktop aplikacije',
-		'icon'  => 'desktop',
+		'title'  => 'Desktop aplikacije',
+		'icon'   => 'desktop',
+		'anchor' => 'desktop-aplikacije',
 	),
 	array(
-		'title' => 'Mobilne aplikacije',
-		'icon'  => 'mobile',
+		'title'  => 'Mobilne aplikacije',
+		'icon'   => 'mobile',
+		'anchor' => 'mobilne-aplikacije',
 	),
 );
 ?>
@@ -53,8 +59,8 @@ $services = array(
 					Ne radimo samo<br>
 					web stranice.
 					<strong>
-						Gradimo digitalne<br>
-						alate za poslovanje.
+						Gradimo rješenja<br>
+						koja vam olakšavaju posao
 					</strong>
 				</h2>
 
@@ -65,18 +71,18 @@ $services = array(
 				<div class="ab-stats">
 
 					<div>
-						<strong>6+</strong>
+						<strong>6</strong>
 						<span>područja<br>razvoja</span>
 					</div>
 
 					<div>
-						<strong>100%</strong>
-						<span>posvećenost<br>projektu</span>
+						<strong>1:1</strong>
+						<span>direktna<br>komunikacija</span>
 					</div>
 
 					<div>
-						<strong>∞</strong>
-						<span>dugoročna<br>suradnja</span>
+						<strong>Po mjeri</strong>
+						<span>rješenja za<br>vaš posao</span>
 					</div>
 
 				</div>
@@ -85,9 +91,7 @@ $services = array(
 
 					<p>
 						Od modernih web stranica do složenih
-						poslovnih aplikacija – pomažemo malim
-						i srednjim tvrtkama da digitaliziraju
-						procese, unaprijede poslovanje i rastu brže.
+						poslovnih aplikacija – pomažemo malim i srednjim tvrtkama da pojednostave posao, uvedu više reda u svakodnevne procese i uštede vrijeme.
 					</p>
 
 					<a href="#o-nama">
@@ -107,7 +111,7 @@ $services = array(
 			<?php foreach ( $services as $index => $service ) : ?>
 
 				<a
-					href="#"
+					href="<?php echo esc_url( home_url( '/usluge/#' . $service['anchor'] ) ); ?>"
 					class="ab-service-item<?php echo 0 === $index ? ' is-active' : ''; ?>"
 				>
 

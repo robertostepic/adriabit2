@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<section class="ab-process">
+<section id="proces" class="ab-process">
 
 	<div class="container--wide ab-process__inner">
 
@@ -30,12 +30,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="ab-process__copy">
 
 			<p>
-				Vjerujemo u jednostavan proces,<br>
-				jasnu komunikaciju i rješenja koja<br>
-				donose stvarnu vrijednost.
+				Važno nam je da od početka znate što radimo,<br>
+				gdje smo s projektom<br>
+				i što slijedi dalje.
 			</p>
 
-			<a href="#">
+			<a href="<?php echo esc_url( home_url( '/usluge/#kako-radimo' ) ); ?>">
 				Kako radimo
 				<span>→</span>
 			</a>

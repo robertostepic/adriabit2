@@ -6,12 +6,12 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 get_header();
 ?>
-<main class="legal-page">
+<main id="main-content" class="legal-page">
 	<section class="legal-hero">
 		<div class="legal-shell">
 			<p class="legal-eyebrow">KOLAČIĆI</p>
 			<h1>Politika<br><span>kolačića.</span></h1>
-			<p class="legal-intro">Ova stranica bit će usklađena s kolačićima i vanjskim servisima koje AdriaBit stvarno koristi na produkcijskoj web stranici.</p>
+			<p class="legal-intro">Ovdje objašnjavamo kako AdriaBit koristi kolačiće i kako možete upravljati svojim odabirom.</p>
 		</div>
 	</section>
 
@@ -27,8 +27,8 @@ get_header();
 
 			<article class="legal-article">
 				<div class="legal-warning">
-					<strong>Radna verzija</strong>
-					<p>Nećemo izmišljati Google Analytics, Meta Pixel ili druge servise. Tablicu kolačića završavamo tek kada odlučimo koje servise stvarno ugrađujemo.</p>
+					<strong>Napomena</strong>
+					<p>Na stranici ne navodimo analitičke ili marketinške servise koji nisu stvarno uključeni. Popis se ažurira kada se uvede novi servis koji koristi kolačiće ili slične tehnologije.</p>
 				</div>
 
 				<section id="sto-su">
@@ -43,19 +43,19 @@ get_header();
 
 				<section id="trenutno">
 					<span>03</span><h2>Koje kolačiće AdriaBit koristi</h2>
-					<p>Popis ćemo generirati prema stvarnom produkcijskom setupu. Prije toga ne navodimo servise niti kolačiće koji možda uopće neće biti instalirani.</p>
+					<p>AdriaBit trenutno koristi sustav za upravljanje privolom koji pamti vaš odabir u pregledniku. Analitički i marketinški servisi ne trebaju se navoditi kao aktivni dok ih stvarno ne uključimo.</p>
 					<div class="legal-table">
 						<div><strong>Naziv</strong><strong>Svrha</strong><strong>Trajanje</strong></div>
-						<div><span>Bit će uneseno nakon produkcijskog audita.</span><span>—</span><span>—</span></div>
+						<div><span>adriabit_cookie_consent_v1</span><span>Pamti odabir postavki kolačića u pregledniku.</span><span>Do brisanja podataka preglednika ili promjene postavki.</span></div>
 					</div>
 				</section>
 
 				<section id="upravljanje">
 					<span>04</span><h2>Upravljanje kolačićima</h2>
-					<p>Kada uvedemo sustav privole, korisnik će moći odabrati dopuštene kategorije koje nisu nužne te kasnije promijeniti svoj izbor. Tehnička implementacija mora odgovarati stvarnim skriptama na stranici, a ne samo prikazivati banner.</p>
+					<p>Pri prvom posjetu možete prihvatiti sve opcionalne kategorije, odbiti ih ili otvoriti postavke i odabrati pojedine kategorije. Svoj odabir možete kasnije ponovno otvoriti putem gumba „Postavke kolačića”.</p>
 				</section>
 
-				<p class="legal-updated">Radna verzija dokumenta — završava se zajedno s implementacijom cookie consent sustava.</p>
+				<p class="legal-updated">Politika se ažurira kada se promijene kolačići ili vanjski servisi koje stranica stvarno koristi.</p>
 			</article>
 		</div>
 	</section>

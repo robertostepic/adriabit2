@@ -76,7 +76,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				Usluge
 			</a>
 
-			<a href="<?php echo esc_url( home_url( '/#projekti' ) ); ?>">
+			<a href="<?php echo esc_url( home_url( '/demo/' ) ); ?>">
 				Projekti
 			</a>
 
@@ -119,6 +119,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		class="mobile-navigation"
 		id="mobile-navigation"
 		data-mobile-navigation
+		aria-hidden="true"
 	>
 
 		<nav aria-label="<?php esc_attr_e( 'Mobilna navigacija', 'adriabit' ); ?>">
@@ -127,8 +128,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				Početna
 			</a>
 
-			<a href="<?php echo esc_url( home_url( '/#sto-radimo' ) ); ?>">
-				Što radimo
+			<a href="<?php echo esc_url( home_url( '/usluge/' ) ); ?>">
+				Usluge
 			</a>
 
 			<a href="<?php echo esc_url( home_url( '/#proces' ) ); ?>">
@@ -137,6 +138,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<a href="<?php echo esc_url( home_url( '/demo/' ) ); ?>">
 				Projekti
+			</a>
+
+			<a href="<?php echo esc_url( home_url( '/#o-nama' ) ); ?>">
+				O nama
 			</a>
 
 			<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>">

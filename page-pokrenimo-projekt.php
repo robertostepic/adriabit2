@@ -25,7 +25,7 @@ if ( 'POST' === $_SERVER['REQUEST_METHOD'] && isset( $_POST['adriabit_project_su
 		$project_form_status = 'error';
 	} else {
 
-		$name        = isset( $_POST['name'] ) ? sanitize_text_field( wp_unslash( $_POST['name'] ) ) : '';
+		$name        = isset( $_POST['project_name'] ) ? sanitize_text_field( wp_unslash( $_POST['project_name'] ) ) : '';
 		$company     = isset( $_POST['company'] ) ? sanitize_text_field( wp_unslash( $_POST['company'] ) ) : '';
 		$email       = isset( $_POST['email'] ) ? sanitize_email( wp_unslash( $_POST['email'] ) ) : '';
 		$phone       = isset( $_POST['phone'] ) ? sanitize_text_field( wp_unslash( $_POST['phone'] ) ) : '';
@@ -114,7 +114,7 @@ if ( isset( $_GET['project_sent'] ) && '1' === sanitize_text_field( wp_unslash( 
 get_header();
 ?>
 
-<main id="primary" class="project-page">
+<main id="main-content" class="project-page">
 
 	<section class="project-hero">
 		<div class="project-shell">
@@ -330,7 +330,7 @@ get_header();
 
 							<label class="project-field">
 								<span>Ime i prezime *</span>
-								<input type="text" name="name" autocomplete="name" required>
+								<input type="text" name="project_name" autocomplete="name" required>
 							</label>
 
 							<label class="project-field">

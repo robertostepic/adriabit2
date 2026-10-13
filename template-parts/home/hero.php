@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<section class="ab-hero" data-hero>
+<section id="pocetna" class="ab-hero" data-hero>
 
 	<div class="ab-hero__background" aria-hidden="true">
 		<div class="ab-hero__glow"></div>
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="ab-hero__copy">
 
 			<p class="ab-kicker" data-hero-reveal>
-				Digitalna rješenja za stvarni rast
+				Digitalni studio za web i aplikacije
 			</p>
 
 			<h1 class="ab-hero__title">
@@ -37,19 +37,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</span>
 
 				<span class="ab-title-mask ab-title-mask--accent">
-					<span>koje rade za</span>
+					<span>koje vaš posao</span>
 				</span>
 
 				<span class="ab-title-mask">
-					<span><em>vaš</em> posao.</span>
+					<span><em>čine</em> lakšim.</span>
 				</span>
 
 			</h1>
 
 			<p class="ab-hero__lead" data-hero-reveal>
-				Razvijamo web stranice, aplikacije i digitalne
-				alate koji vam štede vrijeme, povezuju procese
-				i donose stvarne rezultate.
+				Razvijamo web stranice, aplikacije i digitalne alate koji vam štede vrijeme, olakšavaju svakodnevni rad i pomažu da sve bude na jednom mjestu.
 			</p>
 
 			<div class="ab-hero__actions" data-hero-reveal>
@@ -104,7 +102,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</svg>
 					</div>
 
-					<span>Rješenja<br>s rezultatima</span>
+					<span>Rješenja<br>po mjeri</span>
 				</div>
 
 			</div>
@@ -147,10 +145,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 								<small>Klijent</small>
 							</div>
 
-							<h2>Website Redesign</h2>
+							<h2>Portal projekta</h2>
 
 							<p class="ab-portal__intro">
-								Pratite napredak vašeg projekta u stvarnom vremenu.
+								Koncept pregleda napretka projekta na jednom mjestu.
 							</p>
 
 							<div class="ab-project-steps">
@@ -225,7 +223,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<div class="ab-status-card" data-status-card>
 				<span></span>
-				<p>Uvijek znate<br>gdje smo.</p>
+				<p>Koncept<br>klijentskog portala.</p>
 			</div>
 
 			<div class="ab-signature" aria-hidden="true">

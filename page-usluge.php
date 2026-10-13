@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main class="services-page">
+<main id="main-content" class="services-page">
 
 	<section class="services-hero">
 		<div class="container--wide services-hero__inner">
@@ -73,7 +73,7 @@ get_header();
 
 			<div class="services-grid">
 
-				<article class="service-card">
+				<article id="landing-stranice" class="service-card">
 					<div class="service-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24">
 							<rect x="3" y="4" width="18" height="16" rx="2"></rect>
@@ -87,13 +87,12 @@ get_header();
 					<h3>Landing stranice</h3>
 
 					<p>
-						Fokusirane stranice za jednu uslugu, proizvod ili kampanju.
-						Jasna poruka, brzo učitavanje i dobar prikaz na svim uređajima.
+						Stranice za jednu uslugu, proizvod ili kampanju, napravljene tako da budu jasne, brze i jednostavne za korištenje na svakom uređaju.
 					</p>
 				</article>
 
 
-				<article class="service-card">
+				<article id="wordpress-stranice" class="service-card">
 					<div class="service-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24">
 							<circle cx="12" cy="12" r="9"></circle>
@@ -106,13 +105,12 @@ get_header();
 					<h3>WordPress stranice</h3>
 
 					<p>
-						Poslovne WordPress stranice prilagođene vašem brendu,
-						sadržaju i načinu rada — bez generičkog izgleda.
+						WordPress stranice prilagođene vašem brendu, sadržaju i načinu na koji radite — bez gotovih tema i generičkog izgleda.
 					</p>
 				</article>
 
 
-				<article class="service-card">
+				<article id="ecommerce-rjesenja" class="service-card">
 					<div class="service-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24">
 							<path d="M4 7h16l-1.5 9H6z"></path>
@@ -127,13 +125,12 @@ get_header();
 					<h3>eCommerce rješenja</h3>
 
 					<p>
-						Web trgovine s jasnim putem kupnje, jednostavnim upravljanjem
-						proizvodima i preglednim procesom narudžbe.
+						Web trgovine koje su jednostavne za kupce, a vama lake za upravljanje proizvodima, narudžbama i sadržajem.
 					</p>
 				</article>
 
 
-				<article class="service-card">
+				<article id="web-aplikacije" class="service-card">
 					<div class="service-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24">
 							<path d="M8 7 3 12l5 5"></path>
@@ -147,13 +144,12 @@ get_header();
 					<h3>Web aplikacije</h3>
 
 					<p>
-						Interni alati, evidencije, portali i prilagođene aplikacije
-						koje pojednostavljuju konkretne poslovne procese.
+						Prilagođene web aplikacije za evidencije, interne procese, portale i svakodnevne zadatke koje više nema smisla voditi kroz Excel, e-mail i hrpu odvojenih alata.
 					</p>
 				</article>
 
 
-				<article class="service-card">
+				<article id="desktop-aplikacije" class="service-card">
 					<div class="service-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24">
 							<rect x="3" y="4" width="18" height="13" rx="2"></rect>
@@ -166,13 +162,12 @@ get_header();
 					<h3>Desktop aplikacije</h3>
 
 					<p>
-						Desktop softver za poslovanje kada lokalni rad,
-						specifičan workflow ili Windows okruženje imaju više smisla.
+						Programi za računalo napravljeni prema vašem načinu rada — za radionice, urede, evidencije, skladište, račune i druge poslove koje želite imati pod kontrolom na jednom mjestu.
 					</p>
 				</article>
 
 
-				<article class="service-card">
+				<article id="mobilne-aplikacije" class="service-card">
 					<div class="service-card__icon" aria-hidden="true">
 						<svg viewBox="0 0 24 24">
 							<rect x="7" y="2.5" width="10" height="19" rx="2"></rect>
@@ -186,8 +181,7 @@ get_header();
 					<h3>Mobilne aplikacije</h3>
 
 					<p>
-						Mobilna rješenja za korisnike, zaposlenike i procese
-						kojima je potreban jednostavan pristup informacijama u pokretu.
+						Mobilne aplikacije za korisnike ili zaposlenike kojima je važno da informacijama, zadacima i funkcijama mogu pristupiti brzo, gdje god se nalazili.
 					</p>
 				</article>
 
@@ -197,7 +191,7 @@ get_header();
 	</section>
 
 
-	<section class="services-process">
+	<section id="kako-radimo" class="services-process">
 		<div class="container--wide">
 
 			<header class="services-process__header">

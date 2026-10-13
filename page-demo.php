@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<main class="ab-demo-page">
+<main id="main-content" class="ab-demo-page">
 
 	<style>
 		.ab-demo-page {

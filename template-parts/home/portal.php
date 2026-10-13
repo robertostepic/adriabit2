@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="container">
 
 		<p class="eyebrow">
-			ADRIABIT Project Portal
+			Koncept klijentskog portala
 		</p>
 
 		<h2>

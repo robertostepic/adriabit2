@@ -24,27 +24,35 @@
 				</a>
 
 				<p>
-					Web i aplikacije koje rade za vaš posao.
+					Web i aplikacije koje vaš posao čine lakšim.
 				</p>
 
 			</div>
 
 			<div class="site-footer__links">
 
-				<a href="<?php echo esc_url( home_url( '/#usluge' ) ); ?>">
+				<a href="<?php echo esc_url( home_url( '/usluge/' ) ); ?>">
 					Usluge
 				</a>
 
 				<a href="<?php echo esc_url( home_url( '/demo/' ) ); ?>">
-					Demo
+					Projekti
 				</a>
 
-				<a href="<?php echo esc_url( home_url( '/case-studies/' ) ); ?>">
-					Case Studies
+				<a href="<?php echo esc_url( home_url( '/#o-nama' ) ); ?>">
+					O nama
 				</a>
 
 				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>">
 					Kontakt
+				</a>
+
+				<a href="<?php echo esc_url( home_url( '/politika-privatnosti/' ) ); ?>">
+					Politika privatnosti
+				</a>
+
+				<a href="<?php echo esc_url( home_url( '/politika-kolacica/' ) ); ?>">
+					Politika kolačića
 				</a>
 
 			</div>

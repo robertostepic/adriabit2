@@ -832,13 +832,247 @@ body.is-loaded .ab-title-mask > span {
 }
 
 
+
+/* SELECTED PROJECTS
+   ========================================================= */
+
+.home-work {
+	padding: clamp(85px, 9vw, 130px) 0;
+	background: #fff;
+	color: #071a33;
+}
+
+.home-work__intro {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(280px, .58fr);
+	align-items: end;
+	gap: clamp(40px, 8vw, 120px);
+	margin-bottom: 52px;
+}
+
+.home-work h2 {
+	max-width: 820px;
+	margin: 0;
+	font-size: clamp(3rem, 4.7vw, 5.4rem);
+	line-height: .98;
+	letter-spacing: -.055em;
+}
+
+.home-work h2 span {
+	display: block;
+	color: #08acd5;
+}
+
+.home-work__intro-copy {
+	max-width: 480px;
+	margin: 0 0 6px;
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #5d7284;
+}
+
+.home-work__grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px;
+}
+
+.home-work__card {
+	min-width: 0;
+}
+
+.home-work__image {
+	display: block;
+	overflow: hidden;
+	border: 1px solid rgba(7,40,68,.10);
+	border-radius: 16px;
+	background: #071a2b;
+	box-shadow: 0 18px 42px rgba(7,26,43,.10);
+}
+
+.home-work__image img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+	transition: transform 450ms cubic-bezier(.22,1,.36,1);
+}
+
+.home-work__image:hover img,
+.home-work__image:focus-visible img {
+	transform: scale(1.025);
+}
+
+.home-work__card-copy {
+	padding: 22px 4px 0;
+}
+
+.home-work__meta {
+	margin: 0 0 11px;
+	font-size: .68rem;
+	font-weight: 700;
+	letter-spacing: .12em;
+	text-transform: uppercase;
+	color: #0d9fc5;
+}
+
+.home-work__card h3 {
+	margin: 0;
+	font-size: clamp(1.45rem, 2vw, 2rem);
+	line-height: 1.1;
+	letter-spacing: -.035em;
+}
+
+.home-work__card-copy > p:last-child {
+	margin: 14px 0 0;
+	font-size: .94rem;
+	line-height: 1.65;
+	color: #5d7284;
+}
+
+.home-work__actions {
+	margin-top: 42px;
+}
+
+@media (max-width: 900px) {
+	.home-work__intro {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+
+	.home-work__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 640px) {
+	.home-work {
+		padding: 70px 0;
+	}
+
+	.home-work__grid {
+		grid-template-columns: 1fr;
+		gap: 42px;
+	}
+
+	.home-work__actions .ab-button {
+		width: 100%;
+	}
+}
+
+
+
+/* ABOUT / WHY ADRIABIT
+   ========================================================= */
+
+.home-about {
+	padding: clamp(80px, 8vw, 120px) 0;
+	background:
+		radial-gradient(circle at 84% 18%, rgba(47,188,228,.07), transparent 28%),
+		#f2f9fc;
+	color: #071a33;
+}
+
+.home-about__intro {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(280px, .62fr);
+	align-items: end;
+	gap: clamp(40px, 8vw, 120px);
+	margin-bottom: 52px;
+}
+
+.home-about h2 {
+	margin: 0;
+	font-size: clamp(3rem, 4.7vw, 5.2rem);
+	line-height: .98;
+	letter-spacing: -.055em;
+}
+
+.home-about h2 span {
+	display: block;
+	color: #08acd5;
+}
+
+.home-about__intro > p {
+	max-width: 500px;
+	margin: 0 0 6px;
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #536b80;
+}
+
+.home-about__points {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	border-top: 1px solid rgba(7,40,68,.12);
+}
+
+.home-about__points article {
+	padding: 32px 32px 8px 0;
+}
+
+.home-about__points article + article {
+	padding-left: 32px;
+	border-left: 1px solid rgba(7,40,68,.12);
+}
+
+.home-about__points span {
+	display: block;
+	margin-bottom: 22px;
+	font-size: .7rem;
+	font-weight: 700;
+	letter-spacing: .14em;
+	color: #0d9fc5;
+}
+
+.home-about__points h3 {
+	margin: 0;
+	font-size: clamp(1.35rem, 1.8vw, 1.75rem);
+	line-height: 1.15;
+	letter-spacing: -.03em;
+}
+
+.home-about__points p {
+	margin: 14px 0 0;
+	font-size: .94rem;
+	line-height: 1.65;
+	color: #5d7284;
+}
+
+@media (max-width: 900px) {
+	.home-about__intro {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+
+	.home-about__points {
+		grid-template-columns: 1fr;
+	}
+
+	.home-about__points article,
+	.home-about__points article + article {
+		padding: 28px 0;
+		border-left: 0;
+		border-bottom: 1px solid rgba(7,40,68,.12);
+	}
+
+	.home-about__points article:last-child {
+		border-bottom: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	.home-about {
+		padding: 70px 0;
+	}
+}
+
+
 /* Existing later sections temporarily hidden.
    We build them after the approved V1 top section.
    ========================================================= */
 
-.home-work,
 .home-portal,
-.home-about,
 .final-cta {
 	display: none;
 }
