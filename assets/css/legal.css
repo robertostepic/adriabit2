@@ -29,3 +29,18 @@
 .legal-table strong{font-family:var(--font-heading)}
 .legal-updated{font-size:.75rem;line-height:1.6;color:rgba(14,34,56,.45)}
 @media(max-width:850px){.legal-layout{grid-template-columns:1fr}.legal-nav{position:static}.legal-article section{padding-left:42px}.legal-table>div{grid-template-columns:1fr}.legal-table>div strong:not(:first-child){display:none}}
+
+.legal-article section p + p {
+	margin-top: 16px;
+}
+
+.legal-article section a {
+	color: var(--color-blue);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+}
+
+.legal-article section a:hover {
+	color: var(--color-sea);
+}

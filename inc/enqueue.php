@@ -180,7 +180,15 @@ wp_enqueue_script(
 		);
 	}
 
-	if ( is_page( array( 'politika-privatnosti', 'politika-kolacica' ) ) ) {
+	if (
+	is_page(
+		array(
+			'pravni-podaci',
+			'politika-privatnosti',
+			'politika-kolacica',
+		)
+	)
+) {
 	wp_enqueue_style(
 		'adriabit-legal',
 		ADRIABIT_URI . '/assets/css/legal.css',

@@ -2,85 +2,69 @@
 	'use strict';
 
 	const root = document.querySelector('[data-cookie-consent]');
-	if (!root) return;
 
-	const STORAGE_KEY = 'adriabit_cookie_consent_v1';
-	const first = root.querySelector('[data-cookie-first]');
-	const settings = root.querySelector('[data-cookie-settings-panel]');
-	const analytics = root.querySelector('[data-cookie-category="analytics"]');
-	const marketing = root.querySelector('[data-cookie-category="marketing"]');
+	if (!root) {
+		return;
+	}
+
+	const STORAGE_KEY = 'adriabit_cookie_notice_v1';
+
 	const reopen = document.querySelector('[data-cookie-reopen]');
 
-	const read = () => {
+	const dismissButtons = root.querySelectorAll(
+		'[data-cookie-dismiss]'
+	);
+
+	const hasAcknowledged = () => {
 		try {
-			return JSON.parse(localStorage.getItem(STORAGE_KEY));
+			return localStorage.getItem(STORAGE_KEY) === '1';
 		} catch (_) {
-			return null;
+			return false;
 		}
 	};
 
-	const emit = (detail) => {
-		window.dispatchEvent(new CustomEvent('adriabit:cookie-consent', { detail }));
-	};
-
-	const save = (analyticsAllowed, marketingAllowed) => {
-		const value = {
-			necessary: true,
-			analytics: Boolean(analyticsAllowed),
-			marketing: Boolean(marketingAllowed),
-			updated: new Date().toISOString()
-		};
-
-		localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
-		root.setAttribute('hidden', '');
-		document.documentElement.classList.remove('cookie-consent-open');
-		emit(value);
-	};
-
 	const show = () => {
-	const current = read();
+		root.removeAttribute('hidden');
 
-	analytics.checked = Boolean(current?.analytics);
-	marketing.checked = Boolean(current?.marketing);
+		document.documentElement.classList.add(
+			'cookie-consent-open'
+		);
+	};
 
-	first.removeAttribute('hidden');
-	settings.setAttribute('hidden', '');
+	const hide = () => {
+		root.setAttribute('hidden', '');
 
-	root.removeAttribute('hidden');
+		document.documentElement.classList.remove(
+			'cookie-consent-open'
+		);
+	};
 
-	document.documentElement.classList.add('cookie-consent-open');
-};
+	const acknowledge = () => {
+		try {
+			localStorage.setItem(
+				STORAGE_KEY,
+				'1'
+			);
+		} catch (_) {
+			// Local storage may be unavailable.
+		}
 
-	const showSettings = () => {
-	const current = read();
+		hide();
+	};
 
-	analytics.checked = Boolean(current?.analytics);
-	marketing.checked = Boolean(current?.marketing);
-
-	first.setAttribute('hidden', '');
-	settings.removeAttribute('hidden');
-
-	root.removeAttribute('hidden');
-
-	document.documentElement.classList.add('cookie-consent-open');
-};
-
-	root.querySelectorAll('[data-cookie-accept]').forEach(btn => {
-		btn.addEventListener('click', () => save(true, true));
+	dismissButtons.forEach((button) => {
+		button.addEventListener(
+			'click',
+			acknowledge
+		);
 	});
 
-	root.querySelectorAll('[data-cookie-reject]').forEach(btn => {
-		btn.addEventListener('click', () => save(false, false));
-	});
+	reopen?.addEventListener(
+		'click',
+		show
+	);
 
-	root.querySelector('[data-cookie-settings]')?.addEventListener('click', showSettings);
-	root.querySelector('[data-cookie-save]')?.addEventListener('click', () => save(analytics.checked, marketing.checked));
-	reopen?.addEventListener('click', showSettings);
-
-	const current = read();
-	if (!current) {
+	if (!hasAcknowledged()) {
 		show();
-	} else {
-		emit(current);
 	}
 })();

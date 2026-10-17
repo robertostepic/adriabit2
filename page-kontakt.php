@@ -46,14 +46,14 @@ if ( 'POST' === $_SERVER['REQUEST_METHOD'] && isset( $_POST['adriabit_contact_su
 			$mail_message .= "PORUKA\n------------------------------\n{$message}\n";
 
 			$sent = wp_mail(
-				get_option( 'admin_email' ),
-				$mail_subject,
-				$mail_message,
-				array(
-					'Content-Type: text/plain; charset=UTF-8',
-					'Reply-To: ' . $name . ' <' . $email . '>',
-				)
-			);
+	'info@adriabit.com',
+	$mail_subject,
+	$mail_message,
+	array(
+		'Content-Type: text/plain; charset=UTF-8',
+		'Reply-To: ' . $name . ' <' . $email . '>',
+	)
+);
 
 			if ( $sent ) {
 				wp_safe_redirect( add_query_arg( 'contact_sent', '1', get_permalink() ) );
@@ -173,9 +173,24 @@ get_header();
 					</label>
 
 					<label class="contact-consent">
-						<input type="checkbox" name="privacy" value="1" required>
-						<span>Slažem se da se uneseni podaci koriste za obradu i odgovor na moj upit. *</span>
-					</label>
+
+	<input
+		type="checkbox"
+		name="privacy"
+		value="1"
+		required
+	>
+
+	<span>
+		Potvrđujem da sam upoznat/a s načinom obrade
+		osobnih podataka opisanim u
+		<a href="<?php echo esc_url( home_url( '/politika-privatnosti/' ) ); ?>">
+			Politici privatnosti
+		</a>.
+		*
+	</span>
+
+</label>
 
 					<button class="button contact-submit" type="submit" name="adriabit_contact_submit" value="1">
 						Pošalji poruku <span aria-hidden="true">↗</span>

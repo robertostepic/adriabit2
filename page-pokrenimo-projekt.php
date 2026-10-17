@@ -25,7 +25,11 @@ if ( 'POST' === $_SERVER['REQUEST_METHOD'] && isset( $_POST['adriabit_project_su
 		$project_form_status = 'error';
 	} else {
 
-		$name        = isset( $_POST['project_name'] ) ? sanitize_text_field( wp_unslash( $_POST['project_name'] ) ) : '';
+		$name = isset( $_POST['project_name'] )
+	? sanitize_text_field(
+		wp_unslash( $_POST['project_name'] )
+	)
+	: '';
 		$company     = isset( $_POST['company'] ) ? sanitize_text_field( wp_unslash( $_POST['company'] ) ) : '';
 		$email       = isset( $_POST['email'] ) ? sanitize_email( wp_unslash( $_POST['email'] ) ) : '';
 		$phone       = isset( $_POST['phone'] ) ? sanitize_text_field( wp_unslash( $_POST['phone'] ) ) : '';
@@ -85,11 +89,11 @@ if ( 'POST' === $_SERVER['REQUEST_METHOD'] && isset( $_POST['adriabit_project_su
 			);
 
 			$sent = wp_mail(
-				get_option( 'admin_email' ),
-				$subject,
-				$message,
-				$headers
-			);
+	'info@adriabit.com',
+	$subject,
+	$message,
+	$headers
+);
 
 			if ( $sent ) {
 				wp_safe_redirect(
@@ -352,11 +356,23 @@ get_header();
 					</fieldset>
 
 					<label class="project-consent">
-						<input type="checkbox" name="privacy" value="1" required>
-						<span>
-							Slažem se da se uneseni podaci koriste za obradu i odgovor na moj upit. *
-						</span>
-					</label>
+
+	<input
+		type="checkbox"
+		name="privacy"
+		value="1"
+		required
+	>
+
+	<span>
+		Potvrđujem da sam upoznat/a s načinom obrade
+		osobnih podataka opisanim u
+		<a href="<?php echo esc_url( home_url( '/politika-privatnosti/' ) ); ?>">
+			Politici privatnosti
+		</a>.
+		*
+	</span>
+
 
 					<div class="project-submit">
 						<button class="button project-submit__button" type="submit" name="adriabit_project_submit" value="1">
